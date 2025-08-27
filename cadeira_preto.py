@@ -21,4 +21,55 @@ b) qual a diferença do cabeçario para a docstring? oque é uma docstring?
     python e serve apenas para especificar informações estritamente do arquivo, enquanto o
     docstring é uma documentação feita sempre em inicio de funções para especificar como
     elas funcional internamente, além disso o desenvolvedor tem acesso a elas.
+
 '''
+# adicione um cabeçalho padrão neste arquivo e resolva os exercícios
+
+
+def e_par(n: int) -> bool:
+    """Retorna True se n é par, senão False."""
+    # TODO: retorne se n é par
+    ...
+
+def fatorial(n: int) -> int:
+    """Retorna n! (n fatorial). Para n<0, levante ValueError."""
+    # TODO: implemente de forma iterativa (sem recursão)
+    ...
+
+def maximo(nums):
+    """Retorna o maior elemento de uma lista não vazia, sem usar max()."""
+    # TODO: percorra a lista guardando o maior atual
+    ...
+import re
+
+def limpa_texto(s: str) -> str:
+    """Deixa minúsculo e remove pontuação comum."""
+    # TODO: converta s para minúsculo e remova pontuações como ,.;:!?'"()-_
+    ...
+
+def conta_vogais(s: str) -> int:
+    """Conta vogais (a,e,i,o,u) em s (desconsidere acentos)."""
+    # TODO: conte as vogais simples
+    ...
+
+def palindromo(s: str) -> bool:
+    """Retorna True se s é palíndromo ignorando espaços e pontuação."""
+    # TODO: normalizar (minúsculo, remover não alfanumérico) e comparar com o reverso
+    ...
+
+def total_por_vendedor(vendas):
+    """
+    vendas: lista de tuplas (nome, valor).
+    Retorna: dict {nome: soma_valores}
+    """
+    # TODO: inicialize um dict e vá somando
+    ...
+
+def melhor_vendedor(totais: dict):
+    """
+    Retorna (nome, total) com o maior total.
+    Se dict vazio, levante ValueError.
+    """
+    # TODO: encontre o par com maior total (sem ordenar a lista inteira)
+    ...
+
